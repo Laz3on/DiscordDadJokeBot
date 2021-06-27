@@ -2,7 +2,7 @@ import os
 import discord
 import requests
 import json
-# from keep_alive import keep_alive
+from keep_alive import keep_alive
 
 client = discord.Client()
 
@@ -32,5 +32,5 @@ async def on_message(message):
 
 my_secret = os.environ['token']
 
-# keep_alive()
+keep_alive()
 client.run(my_secret)
